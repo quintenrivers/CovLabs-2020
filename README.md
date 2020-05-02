@@ -2,7 +2,10 @@
 ## Running `django_server`
 ```bash
 cd django_server
-pip install requirements.txt
+mkdir venv
+python3 -m venv venv/
+source venv/bin/activate
+pip install -r requirements.txt
 
 python manage.py createsuperuser
 # provide username, password, and email

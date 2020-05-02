@@ -26,3 +26,10 @@ By clicking on the `Core` API link you can manually add visits or see the visits
 
 ## API Root
 With the server running, you can visit the [API Root](http://localhost:8000/api/) you can see all of the endpoints. All endpoints as of now, support standard [CRUD](https://www.codecademy.com/articles/what-is-crud). By clicking on a specific endpoint, you will be able to see the allowed operations as well as a form/buttons to perform the operations in the browser
+
+## Populating Data
+There is a script to simulate the population of 90 days (financial quarter) of customer visits assuming there are 1000 visits a day.
+With `django_server` running:
+```bash
+python django_server/scripts/populate_db.py
+```

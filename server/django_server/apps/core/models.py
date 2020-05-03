@@ -1,6 +1,5 @@
 from django.db import models
 
-
 class Visit(models.Model):
     """
     A class used to represent a visit to a store
@@ -15,8 +14,8 @@ class Visit(models.Model):
     device_id: CharField
         a unique ID representing a device
     """
-    time_in = models.DateTimeField()
-    time_out = models.DateTimeField()
+    time_in = models.DateTimeField(null=False)
+    time_out = models.DateTimeField(null=False)
     device_id = models.CharField(max_length=64)
 
     def __str__(self):

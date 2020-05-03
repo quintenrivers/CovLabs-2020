@@ -33,3 +33,10 @@ With `django_server` running:
 ```bash
 python django_server/scripts/populate_db.py
 ```
+
+## Running `dashboard`
+```bash
+cd dashboard
+yarn start
+```
+`dashboard` will be ran in development and can be found [here](http://localhost:3000)
